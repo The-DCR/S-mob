@@ -1,0 +1,12 @@
+{
+    "values": [
+    "sdim:loop",
+    "smob:loop",
+    "smob:checkmob",
+    "smob:elitemob",
+    "smob_bosses:loop",
+    "smob_bosses:ritual",
+    "sfood:loop",
+    "sfood:craft"
+    ]
+}

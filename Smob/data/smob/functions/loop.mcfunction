@@ -1,0 +1,7 @@
+# Craft
+execute as @e[type=item,nbt={Item:{id:"minecraft:quartz",Count:4b,tag:{Ecrystal:1b}}}] at @s as @e[type=item,nbt={Item:{id:"minecraft:diamond",Count:4b}},limit=1,distance=0..1] at @s as @e[type=item,nbt={Item:{id:"minecraft:paper",Count:1b}},limit=1,distance=0..1] at @s run summon item ~ ~ ~ {Tags:["smob_fresh_craft"],CustomName:'{"text":"God scroll"}',Item:{id:"minecraft:paper",Count:1b,tag:{display:{Name:'{"text":"God Scroll","color":"dark_red","bold":true}'},Gscroll:1b,Enchantments:[{}]}}}
+execute as @e[type=item,nbt={Item:{id:"minecraft:gold_ingot",Count:1b,tag:{Ewar:1b}}}] at @s as @e[type=item,nbt={Item:{id:"minecraft:coal",Count:1b,tag:{Efire:1b}}},limit=1,distance=0..1] at @s as @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",Count:1b,tag:{Edef:1b}}},limit=1,distance=0..1] at @s as @e[type=item,nbt={Item:{id:"minecraft:netherite_scrap",Count:1b,tag:{Wrel:1b}}},limit=1,distance=0..1] at @s run summon item ~ ~ ~ {Tags:["smob_fresh_craft"],Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{display:{Name:'{"text":"Cawwot gwun","color":"gold","bold":true}',Lore:['{"text":"Does no damage at all, Its just really cool"}']},Cwg:1b,Enchantments:[{id:"minecraft:unbreaking",lvl:255s}]}}}
+
+execute as @e[tag=smob_fresh_craft] at @s run kill @e[type=item,tag=!smob_fresh_craft,distance=0..1.5]
+execute as @e[tag=smob_fresh_craft] at @s run playsound block.anvil.use master @a[distance=..5] ~ ~ ~
+execute as @e[tag=smob_fresh_craft] at @s run tag @s remove smob_fresh_craft

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": 9999999,
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:checkerboard",
+      "biomes": [
+        "minecraft:eroded_badlands",
+        "minecraft:end_highlands",
+        "minecraft:beach",
+        "minecraft:windswept_savanna",
+        "minecraft:basalt_deltas",
+        "minecraft:ice_spikes",
+        "minecraft:desert",
+        "minecraft:nether_wastes",
+        "minecraft:mushroom_fields",
+        "minecraft:soul_sand_valley",
+        "minecraft:jagged_peaks",
+        "minecraft:jungle"
+      ]
+    }
+  }
+}
